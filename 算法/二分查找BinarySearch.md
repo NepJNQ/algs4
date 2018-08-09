@@ -1,4 +1,5 @@
 > ##### 要求：程序接受一个白名单文件（一列整数）作为参数，过滤名单中存在的条目，将其余条目打印
+
 #### 1.寻常实现（利用书中管道和重定向接收输入）
 ```Java
 public class BinarySearch{
@@ -25,8 +26,11 @@ pubilc static void main(String[] args){
 }
 ```
 #### 要点：
+
 > ##### 1.high = a.length - 1；
+
 > ##### 2.low <= high:&ensp;当a[] = {1,3,5},查找5时,当条件只是low < high,无法找到5；
+
 > ##### 3.mid ± 1：&ensp;若没有±1操作，当无键值时，无法有low <= high跳出循环
 
 ---
