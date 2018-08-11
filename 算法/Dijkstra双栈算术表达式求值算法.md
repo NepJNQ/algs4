@@ -23,7 +23,7 @@ public class Evaluate {
                 if(op.equals("+")) val += vals.pop();
                 else if(op.equals("-")) val -= vals.pop();
                 else if(op.equals("*")) val *= vals.pop();
-                else if(op.equals("/")) val /= vals.pop();
+                else if(op.equals("/")) val = vals.pop() / val;
                 else if(op.equals("sqrt")) val = Math.sqrt(val);
                 vals.push(val);
             }
